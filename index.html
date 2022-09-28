@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* #logo{
+            width: 190px;
+            height: 27px;
+            padding: 15px;
+        } */
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f6f8f9;
+        }
+        #navbar>div>img{
+            width: 190px;
+            height: 27px;
+            padding: 15px;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            width: 1190px;
+            height: 70px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        #navright{
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            gap: 37px;
+        }
+        .nav{
+            padding: 10px 0px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #242954;
+            font-weight: 700;
+            font-family: -apple-system,sans-serif;
+        }
+        #try{
+            border: 2px solid #ed565a;
+            border-radius: 7px;
+            padding-right: 035px;
+            padding-left: 35px;
+            color: #ed565a;
+        }
+        #login{
+            background-color: #ed565a ;
+            border-radius: 7px;
+            padding-right: 35px;
+            padding-left: 35px;
+            color: white;
+        }
+        #header{
+            width: 1002px;
+            margin: auto;
+            text-align: center;
+        }
+        p:nth-child(1){
+            font-size: 12px;
+            margin-bottom: 40px;
+            color: #ed565a;
+            font-weight: 500;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 1000;
+            color: #242954;
+        }
+        h1{
+            font-size: 75px;
+            width: 900px;
+            margin: auto;
+            margin-bottom: 30px;
+            color: #242954;
+            line-height: 1;
+        }
+    form+p{
+            color: grey;
+            font-size: 12px;
+            margin-left: 150px;
+        }
+        input{
+            width: 40%;
+            text-align: center;
+            border-radius: 7px;
+            border: 1px solid;
+            height: 40px;
+        }
+        #sub{
+            width: 40%;
+            background-color: #ed565a;
+            border: none;
+            color: white;
+            height: 43px;
+        }
+        form{
+            display: flex;
+            width: 550px;
+            margin: auto;
+            gap: 10px;
+        }
+        #google{
+            display: flex;
+            margin: auto;
+            width: 250px;
+            gap:20px;
+        }
+        #google>img{
+            height: 25px;
+            margin-top: 6px;
+        }
+        #google>a{
+            color: black;
+            text-decoration: underline;
+            }
+        #mid{
+            width: 1250px;
+            height: 353px;
+            margin: auto;
+        }
+        #mid>img{
+            height: 350px;
+            margin-left: -600px;
+            margin-top: -70px;
+        }
+        #banner>p{
+            color: grey;
+            font-size: 16px;
+            text-align: center;
+            background-color: white;
+            padding-top: 50px;
+        }
+        #banner{
+            margin: auto;
+            width: 100%;
+            height: 300px;
+            background-color: white;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+            padding: 20px;
+            margin-bottom: 150px;
+        }
+        #banner>div{
+            width: 1190px;
+            margin: auto;
+            background-color: white;
+        }
+        .item>img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-color: #f6f8f9;
+}
+        #features{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        #features>div{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+            width: 100%;
+        }
+        #features>div{
+            margin: auto;
+            width: 1190px;
+            margin-bottom: 150px;
+        }
+        #features>div>div{
+            background-color: white;
+            text-align: center;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 70px;
+        }
+        #features>div>div>p{
+            color: grey;
+            background-color: white;
+            padding: 20px;
+        }
+        #features>div>div>h2{
+            padding: 20px;
+            background-color: white;
+        }
+        #features>div>div>img{
+            width: 100%;
+            background-color: white;
+        }
+        #apps{
+            width: 80%;
+            height: 550px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 40px;
+            margin-bottom: 150px;
+        }
+        #apps>div>h2{
+            font-size: 28px;
+        }
+        #apps>div>p{
+            font-size: 18px;
+            color: grey;
+        }
+        #apps>div>button{
+            padding: 10px 40px;
+            border-radius: 6px;
+        }
+        #apps>div{
+            margin: auto;
+        }
+        #apps>div:nth-child(1)>img{
+            height: 140px;
+        }
+        #apps>div:nth-child(3)>img{
+            height: 70px;
+            width: 70px;
+        }
+        #apps>div:nth-child(4)>img{
+            height: 70px;
+            width: 70px;
+        }
+        #apps>div:nth-child(5)>img{
+            height: 70px;
+            width: 70px;
+        }
+        #features2{
+            width: 100%;
+            margin: auto;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            margin-bottom: 150px;
+            padding: 50px;
+        }
+        #features2>div{
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 80%;
+            margin: auto;
+        }
+        #features2>div>div{
+            background-color: white;
+        }
+        #features2>div>div>h2,#features2>div>div>p,#features2>div>div>img{
+            background-color: white;
+        }
+        #features2>div>div>img{
+            height: 140px;
+        }
+        #features2>div>div>p{
+            color: grey;
+        }
+        #lowerhead{
+            width: 950px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            margin-bottom: 150px;
+        }
+        #lowerhead>div{
+            width: 100%;
+        }
+        #lowerhead>div>h1{
+            font-size: 45px;
+            padding: 20px;
+            width: 600px;
+            margin-bottom: -30px;
+        }
+        #lowerhead>div>p{
+            padding: 25px;
+            color: grey;
+        }
+        #lowerhead>div>#low{
+            margin-left: 300px;
+            margin-top: -10px;
+            color: black;
+            font-weight: bold;
+        }
+        #footer{
+            width: 1200px;
+            margin: auto;
+        }
+        #footer>div>img{
+            height: 77px;
+        }
+        #started{
+            width: 60%;
+            margin-bottom: 150px;
+        }
+        #footer>div>h1{
+            font-size: 50px;
+        }
+        #footer>div>p{
+            color: grey;
+            font-size: 20px;
+        }
+        #footer>div>#low{
+            color: black;
+            font-size: 12px;
+            margin-left: 275px;
+        }
+        #links>div{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            line-height: 25px;
+        }
+        #links>div>h2{
+            font-size: small;
+        }
+        #links>div>a{
+            text-decoration: none;
+            color: #242954;
+            font-size: 12px;
+        }
+        #links{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(5,1fr);
+            gap: 20px;
+            margin-bottom: 100px;
+        }
+        #social{
+            height: 40px;
+        }
+        #end>div>img{
+            background-color: #242954;
+            height: 60%;
+            border-radius: 100px;
+            padding: 10px;
+        }
+        #end{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        #support{
+            color: #242954;
+            font-weight: bold;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/logo.svg" alt="">
+        </div>
+        <div id="navright">
+            <a href="" class="nav">INTEGRATIONS</a>
+            <a href="" class="nav">BLOG</a>
+            <a href="" class="nav">FEATURES</a>
+            <a href="" id="try" class="nav">TRY IT FREE</a>
+            <a href="" id="login" class="nav">LOGIN</a>
+        </div>
+    </div>
+    <div id="header">
+        <p>TRACKING TIME TRACKER SOFTWARE</p>
+        <h2>SET AND FORGET TIME TRACKING</h2>
+        <h1>Bring your productivity to the next level.</h1>
+        <form action="">
+            <input type="text" placeholder="Your work Email">
+            <input id="sub" type="submit" value="START FOR FREE!">
+        </form>
+        <p>14-day PRO trial included</p>
+        <div id="google">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/google-key.png" alt="">
+        <a href="">Sign in with Google</a>
+        </div>
+        <div id="mid">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/ilus-header-2.svg" alt="">
+        </div>
+    </div>
+    <div id="banner">
+        <p>Companies of all shapes and sizes use TrackingTime:</p>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo11.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/home/logos/color/logo10.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <div id="features">
+        <h2>THE FEATURES YOUR PROJECT MANAGEMENT APP IS MISSING.</h2>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/article-1.svg" alt="">
+                <h2>Measure your team's productivity</h2>
+                <p>Get a record of the worked hours and keep your projects in order, be abreast of ongoing or completed projects with our super friendly app.</p>
+            </div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/article-2.svg" alt="">
+                <h2>The most flexible reporting engine</h2>
+                <p>Project budgeting, client billing, payroll, productivity analytics and much more: No matter what kind of reports you need, TrackingTime has got you covered.</p>
+            </div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/article-3.svg" alt="">
+                <h2>Monitor your team's workload, in real time</h2>
+                <p>See every work in progress and measure the productivity of your team by monitoring them in real time</p>
+            </div>
+        </div>
+    </div>
+    <div id="apps">
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/grupo.svg" alt="">
+            <h2>
+                Add time tracking to your favourite business apps
+            </h2>
+            <p>
+                No matter where your employees work, TrackingTime works with them. Install the TrackingTime Button for Chrome and Firefox and track time right within the productivity apps your employees use everyday.
+            </p>
+            <button>SEE ALL</button>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/asana.png" alt="">
+            <h2>Asana</h2>
+            <p>Asana puts tasks and conversations together to enable teamwork without email.</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/trello.png" alt="">
+            <h2>Trello</h2>
+            <p>Trello is a collaboration tool that organizes your projects into boards.</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/todoist.png" alt="">
+            <h2>Todoist</h2>
+            <p>Todoist is a task manager thats useful, fast and easy to use.</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/smartsheet.png" alt="">
+            <h2>Smartsheet</h2>
+            <p>Smartsheet is a web-based project and task management and work collaboration software.</p>
+        </div>
+    </div>
+    <div id="features2">
+       <div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/slider-1.svg" alt="">
+            <h2>Timecards Approval</h2>
+            <p>Track clock in and out times with no effort</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/slider-2.svg" alt="">
+            <h2>Budgeting</h2>
+            <p>Keep your projects on time and budget.</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/slider-3.svg" alt="">
+            <h2>Work schedules</h2>
+            <p>Specify when your employees are expected to be at their job.</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/slider-4.svg" alt="">
+            <h2>Timesheet Audits</h2>
+            <p>Avoid data inconsistencies with just one click.</p>
+        </div>
+       </div>
+    </div>
+    <div id="lowerhead">
+        <div>
+            <img src="./images/1.png" alt="">
+        </div>
+        <div>
+            <h1>Get professional timesheets done in no time!</h1>
+            <p>Sign up today and join thousands of people around the world using TrackingTime to simplify their timesheets.</p>
+            <form action="">
+                <input type="text" placeholder="Your work Email">
+                <input id="sub" type="submit" value="START FOR FREE!">
+            </form>
+            <p id="low">14-day PRO trial included</p>
+            <div id="google">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/google-key.png" alt="">
+            <a href="">Sign in with Google</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="started">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/footer/tt.svg" alt="">
+            <h1>Get Started</h1>
+            <p>Sign up today and join thousands of people around the world using TrackingTime to make the most of their time.</p>
+            <form action="">
+                <input type="text" placeholder="Your work Email">
+                <input id="sub" type="submit" value="START FOR FREE!">
+            </form>
+            <p id="low">14-day PRO trial included</p>
+            <div id="google">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/google-key.png" alt="">
+            <a href="">Sign in with Google</a>
+            </div>
+        </div>
+        <div id="links">
+          <div>
+            <h2>Industries</h2>
+            <a href="">Time tracking for Graphic Designers</a>
+            <a href="">Time tracking software for Architects</a>
+            <a href="">Time tracking for Remote Workers</a>
+            <a href="">Time tracking for Marketing Teams</a>
+            <a href="">Time tracking for Freelancers</a>
+          </div>
+          <div>
+            <h2>Product</h2>
+            <a href="">Plans & Pricing</a>
+            <a href="">Integrations</a>
+            <a href="">Product Updates</a>
+            <a href="">Slack Bot</a>
+            <a href="">Microsoft Teams</a>
+          </div>
+          <div>
+            <h2>Features</h2>
+            <a href="">Online Timesheet For Efficient Companies</a>
+            <a href="">Time Tracker for every business</a>
+            <a href="">Reports for billing and payroll to reduce admin work</a>
+            <a href="">Attendance tracker for every business</a>
+            <a href="">Project Management Time Tracking Software</a>
+          </div>
+          <div>
+            <h2>Apps</h2>
+            <a href="">Web App</a>
+            <a href="">Time Tracker app for Mac</a>
+            <a href="">Time Tracker for Windows</a>
+            <a href="">iPhone App</a>
+            <a href="">Android App</a>
+            <a href="">Time Tracking for Chrome</a>
+            <a href="">Time Tracking for Firefox</a>
+            <a href="">Time Tracking for Safari</a>
+          </div>
+          <div>
+            <h2>Company</h2>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Media kit</a>
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">DMCA Policy</a>
+            <a href="">Impressum</a>
+          </div>
+        </div>
+        <div id="end">
+            <div id="social">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/social/twitterblanco.png" alt="">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/social/linkedinblanco.png" alt="">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/social/facebookblanco.png" alt=""><br><br>
+            <a href="" id="support">support@trackingtime.co</a>
+            </div>
+            <div id="links">
+                <div>
+                    <h2>Help & Support</h2>
+                    <a href="">Help Center</a>
+                    <a href="">Developers</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div>
+                    <h2>Choose Language</h2>
+                    <a href="">ENGLISH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+    </script>
+</body>
+</html>
