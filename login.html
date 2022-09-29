@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #form{
+            padding: 100px;
+            text-align: center;
+        }
+        #form>form>img{
+            height: 25px;
+            padding: 30px;
+        }
+        #main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            align-items: center;
+        }
+        button>img{
+            height: 20px;
+        }
+        button{
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f4;
+            border: none;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid rgb(230, 229, 229);
+        }
+        form>p{
+            padding: 10px;
+        }
+        #box{
+            width: 16px;
+            height: 16px;
+        }
+        label>p{
+            text-decoration: underline;
+        }
+        label{
+            color: #626576;
+            font-size: 16px;
+        }
+        #sub{
+            background-color: #12131e;
+            color: white;
+            border-radius: 5px;
+        }
+        input~p{
+            text-decoration: underline;
+            font-size: small;
+            color: #626576;
+        }
+        button:hover,#sub:hover{
+            cursor: pointer;
+        }
+        #bg>img{
+            height: 100%;
+        }
+        #wrong{
+            border: 1px solid red;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="bg">
+            <img src="./images/login_bg.png" alt="">
+        </div>
+        <div id="form">
+            <form action="">
+                <div id="wrong">We could not find your account. Make sure your email and password are correct!</div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/logo.svg" alt=""><br>
+            <button><img src="https://img.icons8.com/color/48/000000/google-logo.png"/>Sign in with Google</button>
+            <button><img src="https://img.icons8.com/color/48/000000/microsoft.png"/>Sign in with Microsoft</button>
+            <button><img src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png"/>Sign in with Apple</button>
+            <p>----Sign in with your email----</p>
+            <input type="email" placeholder="Email" id="email"><br>
+            <input type="password" placeholder="Password" id="password"><br>
+            <p>Forgot your password?<u>Retrieve</u></p>
+            <input type="checkbox" id="box" value="policy">
+            <label for="">I agree with the <p>Terms of service & Privacy Policy</p></label><br>
+            <input type="submit" value="LOGIN" id="sub">
+            <p>Don't have an account? SIGN UP</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let form=document.querySelector("form")
+    form.addEventListener("submit",login)
+    let wrong=document.querySelector("#wrong")
+            wrong.style.display="none"
+    function login(){
+        event.preventDefault()
+        let loginEmail=form.email.value
+        let loginPassword=form.password.value
+ 
+        if(loginEmail==localStorage.getItem("email") && loginPassword==localStorage.getItem("password")){
+            window.location.href="./table.html"
+        }else{
+            wrong.style.display=""
+        }
+    }
+</script>
