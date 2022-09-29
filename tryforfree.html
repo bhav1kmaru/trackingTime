@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #form{
+            padding: 100px;
+            text-align: center;
+        }
+        #form>form>img{
+            height: 25px;
+            padding: 30px;
+        }
+        #main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            align-items: center;
+        }
+        button>img{
+            height: 20px;
+        }
+        button{
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f4;
+            border: none;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid rgb(230, 229, 229);
+        }
+        form>p{
+            padding: 10px;
+        }
+        #box{
+            width: 16px;
+            height: 16px;
+        }
+        label>p{
+            text-decoration: underline;
+        }
+        label{
+            color: #626576;
+            font-size: 16px;
+        }
+        #sub{
+            background-color: #12131e;
+            color: white;
+            border-radius: 5px;
+        }
+        input~p{
+            text-decoration: underline;
+            font-size: small;
+            color: #626576;
+        }
+        button:hover,#sub:hover{
+            cursor: pointer;
+        }
+        #bg>img{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="bg">
+            <img src="./images/login_bg.png" alt="">
+        </div>
+        <div id="form">
+            <form action="">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/logo.svg" alt=""><br>
+            <button><img src="https://img.icons8.com/color/48/000000/google-logo.png"/>Sign up with Google</button>
+            <button><img src="https://img.icons8.com/color/48/000000/microsoft.png"/>Sign up with Microsoft</button>
+            <button><img src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png"/>Sign up with Apple</button>
+            <p>----Sign up with your email----</p>
+            <input type="email" placeholder="Email" id="email"><br>
+            <input type="password" placeholder="Password" id="password"><br>
+            <input type="checkbox" id="box" value="policy">
+            <label for="">I agree with the <p>Terms of service & Privacy Policy</p></label><br>
+            <input type="submit" value="SIGN UP" id="sub">
+            <p>Back to login</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let form=document.querySelector("form")
+    form.addEventListener("submit",addData)
+
+    function addData(event){
+        event.preventDefault()
+       let email=form.email.value
+       let password=form.password.value
+       if(email=="" || password=="" || password.length<8){
+            alert("Please fill all fields to Sign Up, Min. password length 8 characters")
+        }else{
+            // alert("login successful")
+        localStorage.setItem("email",email)
+        localStorage.setItem("password",password)
+        window.location.href="./login.html"
+    }
+}
+</script>
