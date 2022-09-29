@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+        #header{
+            width: 1190px;
+            margin: auto;
+            padding: 15px;
+        }
+        h2,h1{
+            color: #242954;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h1{
+            font-size: 64px;
+        }
+        #search{
+            width: 1190px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        #search>input{
+            width: 697px;
+            padding: 20px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #search>p{
+            font-size: 20px;
+            color: grey;
+            width: 965px;
+        }
+        #apps>div>div>img{
+            height: 40px;
+            padding: 20px;
+            border-radius: 7px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #apps{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 1190px;
+            margin: auto;
+            gap: 20px;
+            margin-bottom: 150px;
+        }
+        #apps>div>p{
+            color: grey;
+        }
+        #stores>img{
+            background-color:#2c3135 ;
+            height: 50px;
+            border-radius: 7px;
+        }
+        #lowerbanner{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 1190px;
+            margin: auto;
+            margin-bottom: 250px;
+        }
+        #track{
+            margin: auto;
+        }
+        #track>h1{
+            font-size: 40px;
+        }
+        #track>p{
+            color: grey;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/logo.svg" alt="">
+        </div>
+        <div id="navright">
+            <a href="" class="nav">INTEGRATIONS</a>
+            <a href="" class="nav">BLOG</a>
+            <a href="" class="nav">FEATURES</a>
+            <a href="" id="try" class="nav">TRY IT FREE</a>
+            <a href="" id="login" class="nav">LOGIN</a>
+        </div>
+    </div>
+    <div id="header">
+        <h2>TRACKING TIME BUTTOM FOR CHROME</h2>
+        <h1>TrackingTime<br>Integrations</h1>
+        <h2>TIME TRACKING INTEGRATIONS THAT YOU'LL LOVE</h2>
+    </div>
+    <div id="search">
+        <input type="text" id="searchbar" onkeyup="search()" placeholder="SEARCH YOUR FAVOURITE APP!">
+        <p>Improve your time tracking and increase your productivity with these Integrations.</p>
+        <p>See how much time you spend on each task or project! TrackingTime's integrations make it easy to keep track of your billable and non-billable tasks by integrating with more than 30 apps.</p>
+        <p>TrackingTime can be integrated with other apps, such as project management, accounting, and customer support. Get instant timesheets and analytics with TrackingTime!</p>
+    </div>
+    <div id="apps">
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/airtable.png" alt="">
+            </div>
+            <h2>Airtable</h2>
+            <p>Powerful organizational spreadsheets that works exactly the way you want.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/anydo.png" alt="">
+            </div>
+            <h2>Any.Do</h2>
+            <p>Any.Do helps you get things done with your friends in a simple & elegant way.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/asana.png" alt="">
+            </div>
+            <h2>Asana</h2>
+            <p>Asana puts tasks and conversations together to enable teamwork without email.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/azendoo.png" alt="">
+            </div>
+            <h2>Azendoo</h2>
+            <p>Simplifies projects planning, documents sharing and teamwork synchronization for both your professional activity and your life.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/azure-devops.png" alt="">
+            </div>
+            <h2>Azure DevOps</h2>
+            <p>Continuous Delivery Services for teams to share code, track work, and ship software.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/basecamp-2.png" alt="">
+            </div>
+            <h2>Basecamp 2</h2>
+            <p>Basecamp is a web-based project collaboration tool that allows groups of people to share files.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/basecamp-3.png" alt="">
+            </div>
+            <h2>Basecamp 3</h2>
+            <p>Basecamp 3 is a web-based project collaboration tool that allows groups of people to share files.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/bitbucket.png" alt="">
+            </div>
+            <h2>Bitbucket</h2>
+            <p>Bitbucket is a code hosting site, for the Git and Mercurial version control systems.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/clickup-time-tracking.png" alt="">
+            </div>
+            <h2>Clickup</h2>
+            <p>Docs, Reminders, Goals, Calendars, Chat, scheduling and more.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/coda-time-tracking.png" alt="">
+            </div>
+            <h2>Coda</h2>
+            <p>Coda blends the flexibility of a document, the power of a spreadsheet.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/dixa-time-tracking.png" alt="">
+            </div>
+            <h2>Dixa</h2>
+            <p>Customer service platform that unifies phone, email, chat and messaging apps.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/evernote-time-tracking.png" alt="">
+            </div>
+            <h2>Evernote</h2>
+            <p>Create documents, collaborate on projects, and store information all in one place.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/favro.png" alt="">
+            </div>
+            <h2>Favro</h2>
+            <p>Balance power and simplicity in the ideal collaboration app for developers.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/figma-time-tracking.png" alt="">
+            </div>
+            <h2>Figma</h2>
+            <p>Cloud-based platform that enables businesses to create custom designs.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/flow.svg" alt="">
+            </div>
+            <h2>Flow</h2>
+            <p>Manage tasks, share files, have discussions, and capture ideas all in one place.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/freshdesk.png" alt="">
+            </div>
+            <h2>Freshdesk</h2>
+            <p>Freshdesk is an award-winning, online help desk software that allows you to support customers.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/github.png" alt="">
+            </div>
+            <h2>GitHub</h2>
+            <p>GitHub is a web-based hosting service for projects that use the Git revision control system.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/gitlab.png" alt="">
+            </div>
+            <h2>GitLab</h2>
+            <p>GitLab is a on-premise or hosted Git repository management tool.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/ring-central-time-tracking.png" alt="">
+            </div>
+            <h2>Ring Central</h2>
+            <p>Conversation platform for teams to plan, share & organize work tasks.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/gmail.png" alt="">
+            </div>
+            <h2>Gmail</h2>
+            <p>Gmail is a free search-based web-mail service by Google.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/google-calendar.png" alt="">
+            </div>
+            <h2>Google Calendar</h2>
+            <p>With Google Calendar, its easy to keep track of all your lifes important events in one place.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/gdocs.png" alt="">
+            </div>
+            <h2>Google Docs</h2>
+            <p>Google Docs is an online word processor, part of Google Drive.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/gsheets.png" alt="">
+            </div>
+            <h2>Google Sheets</h2>
+            <p>Google Sheets is an online spreadsheet app that lets you create and format spreadsheets.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/google-drive.png" alt="">
+            </div>
+            <h2>Google Slides</h2>
+            <p>Google Slides is a presentation app offered by Google.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/gtasks.png" alt="">
+            </div>
+            <h2>Google Tasks</h2>
+            <p>Tasks adds a to-do list to Gmail.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/google-chat.png" alt="">
+            </div>
+            <h2>Google Chat</h2>
+            <p>Collaborate on Google chat</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/google-workspace.png" alt="">
+            </div>
+            <h2>Google Workspace</h2>
+            <p>Google Workspace consists of Gmail, Contacts, Calendar, Meet and Chat for communication.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/insightly.png" alt="">
+            </div>
+            <h2>Insightly</h2>
+            <p>Web-based project and Customer Relationship Management (CRM) application.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/jira.png" alt="">
+            </div>
+            <h2>Jira</h2>
+            <p>JIRA is the leading bug tracking, issue tracking and project management tool.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/linear-time-tracking.png" alt="">
+            </div>
+            <h2>Linear</h2>
+            <p>The issue tracking tool you'll enjoy using.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/meistertask-time-tracking.png" alt="">
+            </div>
+            <h2>Meistertask</h2>
+            <p>Collaboration and task management tool on the web.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/microsoft-to-do.png" alt="">
+            </div>
+            <h2>Microsoft To Do</h2>
+            <p>Microsoft To Do is a task management app to help you stay organized and manage your day-to-day.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/microsoft-planner.png" alt="">
+            </div>
+            <h2>Microsoft Planner</h2>
+            <p>Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/monday.png" alt="">
+            </div>
+            <h2>Monday</h2>
+            <p>Monday is a project management tool your team will actually enjoy using.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/nifty-time-tracking.png" alt="">
+            </div>
+            <h2>Nifty</h2>
+            <p>Task management app to manage tasks, timelines and docs.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/notion.png" alt="">
+            </div>
+            <h2>Notion</h2>
+            <p>Notion is the all-in-one workspace for notes, project management, documents, and collaboration.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/outlook.png" alt="">
+            </div>
+            <h2>Outlook.com</h2>
+            <p>Outlook.com is a webmail service from Microsoft, successor of Hotmail.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/podio.png" alt="">
+            </div>
+            <h2>Podio</h2>
+            <p>Podio lets you build and shape the online workplace most fitting to your role.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/redbooth.png" alt="">
+            </div>
+            <h2>Redbooth</h2>
+            <p>Redbooth (formerly Teambox), the cloud-based company redefining collaboration and busines communications.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/redmine.png" alt="">
+            </div>
+            <h2>Redmine</h2>
+            <p>Online project management software built on the Ruby on Rails framework specifically for small groups.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/remember-the-milk.png" alt="">
+            </div>
+            <h2>Remember The Milk</h2>
+            <p>Take your tasks anywhere with this feature-packed application.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/smartsheet.png" alt="">
+            </div>
+            <h2>Smartsheet</h2>
+            <p>Smartsheet is a web-based project and task management and work collaboration software.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/slack.png" alt="">
+            </div>
+            <h2>Slack</h2>
+            <p>Slack brings all your communication together in one place.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/SupportPal.png" alt="">
+            </div>
+            <h2>Supportpal</h2>
+            <p>Powerful self-hosted help desk solution that is simple and intuitive to use.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/taskade.png" alt="">
+            </div>
+            <h2>Taskade</h2>
+            <p>Taskade is reimagining the to-do list by making it visual, structured, and collaborative.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/teams.png" alt="">
+            </div>
+            <h2>Microsoft Teams</h2>
+            <p>Microsoft Teams is the chat-based workspace that integrates all the people, content, and tools your team needs.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/teamwork-time-tracking.png" alt="">
+            </div>
+            <h2>Teamwork</h2>
+            <p>Teamwork is project management software.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/ticktick.png" alt="">
+            </div>
+            <h2>Tick Tick</h2>
+            <p>Your daily must-have to-do & task list to make all things done and get life well organized.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/todoist.png" alt="">
+            </div>
+            <h2>Todoist</h2>
+            <p>Todoist is a task manager thats useful, fast and easy to use.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/trello.png" alt="">
+            </div>
+            <h2>Trello</h2>
+            <p>Trello is a collaboration tool that organizes your projects into boards.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/zendesk.png" alt="">
+            </div>
+            <h2>Zendesk</h2>
+            <p>Offers on-demand help desk software, covering customer support, trouble tickets and knowledge base.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/activecollab-time-tracking.png" alt="">
+            </div>
+            <h2>Activecollab</h2>
+            <p>Project Management Tool in the Office & Productivity category.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/agiled-time-tracking.png" alt="">
+            </div>
+            <h2>Agiled</h2>
+            <p>Project Management software.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/assembla-time-tracking.png" alt="">
+            </div>
+            <h2>Assembla</h2>
+            <p>Online workspaces with best of breed tools like Tasks & Issue Management, SVN & Git Repositories.</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/button/axosoft-time-tracking.png" alt="">
+            </div>
+            <h2>Axosoft</h2>
+            <p>Agile based projecment management software.</p>
+        </div>
+    </div>
+    <div id="lowerbanner">
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/home/download-section/phone.png" alt="">
+        </div>
+        <div id="track">
+            <h1>Track Everywhere</h1>
+            <p>Track your time everywhere you work with our <br>mobile apps for iOS and Android.</p>
+            <div id="stores">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/home/download-section/playstore.png" alt="">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/home/download-section/apstore.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="footer">
+        <div id="started">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/footer/tt.svg" alt="">
+            <h1>Get Started</h1>
+            <p>Sign up today and join thousands of people around the world using TrackingTime to make the most of their time.</p>
+            <form action="">
+                <input type="text" placeholder="Your work Email">
+                <input id="sub" type="submit" value="START FOR FREE!">
+            </form>
+            <p id="low">14-day PRO trial included</p>
+            <div id="google">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/google-key.png" alt="">
+            <a href="">Sign in with Google</a>
+            </div>
+        </div>
+        <div id="links">
+          <div>
+            <h2>Industries</h2>
+            <a href="">Time tracking for Graphic Designers</a>
+            <a href="">Time tracking software for Architects</a>
+            <a href="">Time tracking for Remote Workers</a>
+            <a href="">Time tracking for Marketing Teams</a>
+            <a href="">Time tracking for Freelancers</a>
+          </div>
+          <div>
+            <h2>Product</h2>
+            <a href="">Plans & Pricing</a>
+            <a href="">Integrations</a>
+            <a href="">Product Updates</a>
+            <a href="">Slack Bot</a>
+            <a href="">Microsoft Teams</a>
+          </div>
+          <div>
+            <h2>Features</h2>
+            <a href="">Online Timesheet For Efficient Companies</a>
+            <a href="">Time Tracker for every business</a>
+            <a href="">Reports for billing and payroll to reduce admin work</a>
+            <a href="">Attendance tracker for every business</a>
+            <a href="">Project Management Time Tracking Software</a>
+          </div>
+          <div>
+            <h2>Apps</h2>
+            <a href="">Web App</a>
+            <a href="">Time Tracker app for Mac</a>
+            <a href="">Time Tracker for Windows</a>
+            <a href="">iPhone App</a>
+            <a href="">Android App</a>
+            <a href="">Time Tracking for Chrome</a>
+            <a href="">Time Tracking for Firefox</a>
+            <a href="">Time Tracking for Safari</a>
+          </div>
+          <div>
+            <h2>Company</h2>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Media kit</a>
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">DMCA Policy</a>
+            <a href="">Impressum</a>
+          </div>
+        </div>
+        <div id="end">
+            <div id="social">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/social/twitterblanco.png" alt="">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/social/linkedinblanco.png" alt="">
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/social/facebookblanco.png" alt=""><br><br>
+            <a href="" id="support">support@trackingtime.co</a>
+            </div>
+            <div id="links">
+                <div>
+                    <h2>Help & Support</h2>
+                    <a href="">Help Center</a>
+                    <a href="">Developers</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div>
+                    <h2>Choose Language</h2>
+                    <a href="">ENGLISH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+function search(){
+    let input=document.querySelector("#searchbar")
+    console.log(input.value.toUpperCase())
+    if(!input==""){
+        let apps=document.querySelectorAll("#apps>div")
+        console.log()
+    
+
+    for(let i=0;i<apps.length;i++){
+        if(apps[i].innerHTML.toUpperCase().indexOf(input.value.toUpperCase()) > -1){
+            apps[i].style.display=""
+        }else{
+            apps[i].style.display="none"
+        }
+        console.log(apps[i].innerHTML.toUpperCase())
+
+}
+}
+}
+</script>
