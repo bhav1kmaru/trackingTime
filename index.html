@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/index.css">
     <style>
-        /* #logo{
-            width: 190px;
-            height: 27px;
-            padding: 15px;
-        } */
-        
     </style>
 </head>
 <body>
@@ -26,8 +20,13 @@
         </div>
         <div id="navright">
             <a href="./integrations.html" class="nav">INTEGRATIONS</a>
-            <a href="" class="nav">BLOG</a>
-            <a href="" class="nav">FEATURES</a>
+            <a href="./blog.html" class="nav">BLOG</a>
+            <div id="features1">
+                <a href="" class="nav">FEATURES <div><img src="./images/down-arrow.png" alt=""></div></a>
+                <div id="dropdown">
+                    <a href="./features.html">Time Tracker</a><a href="./features.html">Project Management</a><a href="./features.html">Online Timesheet</a><a href="./features.html">Time Cards</a><a href="./features.html">Attendance Tracking</a><a href="./features.html">Time Reporting</a>
+                </div>
+            </div>
             <a href="./tryforfree.html" id="try" class="nav">TRY IT FREE</a>
             <a href="./login.html" id="login" class="nav">LOGIN</a>
         </div>
@@ -299,6 +298,11 @@
         }
     }
 })
+let logo=document.querySelector("#navbar>div>img")
+logo.addEventListener("click",home)
+function home(){
+    window.location.href="./index.html"
+}
     </script>
 </body>
 </html>

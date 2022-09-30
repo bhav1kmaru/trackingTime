@@ -1,0 +1,99 @@
+h1{
+    color: #242954;
+}
+#banner>img{
+    width: 240px;
+    height: 150px;
+}
+#banner{
+    width: 1190px;
+    margin: 80px auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+#google>a{
+    font-weight: bold;
+}
+form+p{
+    color: grey;
+    font-size: 12px;
+    margin-left: 120px;
+}
+#content{
+    width: 1190px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    gap: 50px;
+    margin-bottom: 150px;
+         }
+#content>div>p{
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -150px;
+}
+#content>div>img{
+    width: 595px;
+    height: 495px;
+}
+#content>div:nth-child(1),#content>div:nth-child(2),#content>div:nth-child(3),#content>div:nth-child(4),#content>div:nth-child(5),#content>div:nth-child(6),#content>div:nth-child(9),#content>div:nth-child(10),#content>div:nth-child(11),#content>div:nth-child(12){
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+#content>div:nth-child(7){
+    margin-top: 80px;
+}
+#content>div>h2{
+    padding: 20px 40px 20px 10px;
+    border: none;
+    font-size: 22px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#content>div>h2:hover{
+    cursor: pointer;
+}
+#lower{
+    text-align: center;
+    margin-bottom: 250px;
+}
+#lower>button{
+    border-radius: 7px;
+    background-color: #ed565a;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+}
+#lower>button:hover{
+    cursor: pointer;
+    background-color: #242954;
+}
+#features2{
+width: 100%;
+margin: auto;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+margin-bottom: 400px;
+padding: 50px;
+}
+#features2>div{
+background-color: white;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 80%;
+margin: auto;
+}
+#features2>div>div{
+background-color: white;
+}
+#features2>div>div>h2,#features2>div>div>p,#features2>div>div>img{
+background-color: white;
+}
+#features2>div>div>img{
+height: 140px;
+}
+#features2>div>div>p{
+color: grey;
+}

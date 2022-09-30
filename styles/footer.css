@@ -34,6 +34,9 @@
     color: #242954;
     font-size: 12px;
 }
+#links>div>a:hover{
+    color: #ed565a;
+}
 #links{
     display: grid;
     width: 100%;
@@ -44,8 +47,10 @@
 #social{
     height: 40px;
 }
-#social:hover{
+#social>img:hover{
     cursor: pointer;
+    background-color:#ed565a;
+    color: #242954;
 }
 #end>div>img{
     background-color: #242954;
@@ -61,6 +66,9 @@
     color: #242954;
     font-weight: bold;
     font-size: small;
+}
+#support:hover{
+    color: #ed565a;
 }
 input{
     width: 40%;

@@ -3,13 +3,22 @@
     height: 27px;
     padding: 15px;
 }
+#navbar>div>img:hover{
+    cursor: pointer;
+}
 #navbar{
     display: flex;
-    justify-content: space-between;
-    width: 1190px;
+    justify-content: space-around;
     height: 70px;
     margin: auto;
     margin-bottom: 40px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #navright{
     display: flex;
@@ -28,18 +37,54 @@
 #try{
     border: 2px solid #ed565a;
     border-radius: 7px;
-    padding-right: 035px;
-    padding-left: 35px;
+    padding-right: 50px;
+    padding-left: 50px;
     color: #ed565a;
+    font-size: 12px;
+}
+#try:hover{
+    background-color: #ed565a;
+    color: white;
 }
 #login{
     background-color: #ed565a ;
     border-radius: 7px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding: 0px 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 12px;
+    border: 2px solid;
+}
+#login:hover{
+    background-color: white;
+    color: #ed565a;
+    border-color: #ed565a;
+}
+#dropdown>a{
+    display: block;
+    text-decoration: none;
+    color: #242954;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+#dropdown>a:hover{
+    color: rgb(0, 132, 255);
+}
+#dropdown{
+    display: none;
+    padding: 12px 16px;
+    position: absolute;
+}
+#features:hover #dropdown{
+    display: block;
 }
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #f6f8f9;
+}
+.nav{
+    display: flex;
 }
