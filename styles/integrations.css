@@ -1,13 +1,14 @@
 #header{
     width: 1190px;
-    margin: auto;
+    margin: 80px auto;
     padding: 15px;
+
 }
 h2,h1{
     color: #242954;
 }
 h2{
-    font-size: 30px;
+    font-size: 28px;
 }
 h1{
     font-size: 64px;
