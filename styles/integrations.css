@@ -68,3 +68,8 @@ h1{
     color: grey;
     font-size: 20px;
 }
+@media all and (min-width:0px) and (max-width:770px){
+    #apps{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

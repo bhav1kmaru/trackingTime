@@ -42,7 +42,7 @@
         <p>14-day PRO trial included</p>
         <div id="google">
             <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/google-key.png" alt="">
-        <a href="./login.html">Sign in with Google</a>
+        <a href="./login.html" id="upperg">Sign in with Google</a>
         </div>
         <div id="mid">
             <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/ilus-header-2.svg" alt="">
@@ -113,7 +113,7 @@
             <p>
                 No matter where your employees work, TrackingTime works with them. Install the TrackingTime Button for Chrome and Firefox and track time right within the productivity apps your employees use everyday.
             </p>
-            <button>SEE ALL</button>
+            <button id="see">SEE ALL</button>
         </div>
         <div>
             <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/temp/logos/asana.png" alt="">
@@ -293,7 +293,7 @@
         600:{
             items:3
         },
-        1000:{
+        1200:{
             items:6
         }
     }
@@ -302,6 +302,11 @@ let logo=document.querySelector("#navbar>div>img")
 logo.addEventListener("click",home)
 function home(){
     window.location.href="./index.html"
+}
+let see=document.querySelector("#see")
+see.addEventListener("click",inte)
+function inte(){
+    window.location.href="./integrations.html"
 }
     </script>
 </body>
