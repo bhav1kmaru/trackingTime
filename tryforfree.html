@@ -5,84 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0px;
-        }
-        #form{
-            padding: 100px;
-            text-align: center;
-        }
-        #form>form>img{
-            height: 25px;
-            padding: 30px;
-        }
-        #main{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            justify-content: center;
-            align-items: center;
-        }
-        button>img{
-            height: 20px;
-        }
-        button{
-            width: 260px;
-            height: 40px;
-            text-align: center;
-            display: flex;
-            gap:20px;
-            justify-content: center;
-            align-items: center;
-            background-color: #f2f2f4;
-            border: none;
-            border-radius: 5px;
-            margin: auto;
-            margin-bottom: 10px;
-        }
-        input{
-            margin-bottom: 10px;
-            width: 260px;
-            height: 40px;
-            text-align: center;
-            border: 1px solid rgb(230, 229, 229);
-        }
-        form>p{
-            padding: 10px;
-        }
-        #box{
-            width: 16px;
-            height: 16px;
-        }
-        label>p{
-            text-decoration: underline;
-        }
-        label{
-            color: #626576;
-            font-size: 16px;
-        }
-        #sub{
-            background-color: #12131e;
-            color: white;
-            border-radius: 5px;
-        }
-        input~p{
-            text-decoration: underline;
-            font-size: small;
-            color: #626576;
-        }
-        button:hover,#sub:hover{
-            cursor: pointer;
-        }
-        #bg>img{
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/tryforfree.css">
 </head>
 <body>
     <div id="main">
         <div id="bg">
-            <img src="./images/login_bg.png" alt="">
+            <img src="https://pro.trackingtime.co/img/ui-login-background.svg" alt="">
         </div>
         <div id="form">
             <form action="">
@@ -96,7 +24,7 @@
             <input type="checkbox" id="box" value="policy">
             <label for="">I agree with the <p>Terms of service & Privacy Policy</p></label><br>
             <input type="submit" value="SIGN UP" id="sub">
-            <p>Back to login</p>
+            <a href="./login.html">Back to login</a>
             </form>
         </div>
     </div>

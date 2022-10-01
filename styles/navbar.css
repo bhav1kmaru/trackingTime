@@ -67,16 +67,18 @@
     display: block;
     text-decoration: none;
     color: #242954;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-weight: bold;
+    background-color: white;
 }
 #dropdown>a:hover{
     color: rgb(0, 132, 255);
 }
 #dropdown{
     display: none;
-    padding: 12px 16px;
+    padding: 12px 30px;
     position: absolute;
+    background-color: white;
 }
 #features:hover #dropdown{
     display: block;
