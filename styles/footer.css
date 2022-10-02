@@ -104,3 +104,8 @@ form{
     color: black;
     text-decoration: underline;
     }
+    @media all and (min-width:0px) and (max-width:770px){
+        #links{
+            width: 50%;
+        }
+    }

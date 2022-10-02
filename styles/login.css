@@ -5,6 +5,7 @@
     padding: 100px;
     text-align: center;
     width: 50%;
+    margin: auto;
 }
 #form>form>img{
     height: 25px;
@@ -59,7 +60,7 @@ label{
     color: white;
     border-radius: 5px;
 }
-input~p{
+input~p,#sign{
     text-decoration: underline;
     font-size: small;
     color: #626576;
