@@ -90,3 +90,11 @@
 .nav{
     display: flex;
 }
+@media all and (min-width:0px) and (max-width:770px){
+    #try{
+        font-size: 8px;
+    }
+    #navbar{
+        display: grid;
+    }
+}
