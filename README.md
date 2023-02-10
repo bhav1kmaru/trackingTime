@@ -20,6 +20,8 @@ TrackingTime is an intuitive Time Tracking Software. Simplify Timesheets. Get ac
 
 ## Deployed Link : https://sunny-salamander-51a37f.netlify.app/index.html
 
+<img src='https://github.com/bhav1kmaru/trackingTime/blob/main/trackingTime.gif?raw=true' />
+
 
 
 
